@@ -10,13 +10,17 @@ def index():
 def profile():
     return render_template('profile.html')
 
-@app.route('/works', methods=['GET', 'POST'])
+@app.route('/works')
 def works():
+    return render_template('works.html')
+
+@app.route('/works/toUpperCase', methods=['GET', 'POST'])
+def touppercase():
     result = None
     if request.method == 'POST':
         input_string = request.form.get('inputString', '')
         result = input_string.upper()
-    return render_template('works.html', result=result)
+    return render_template('touppercase.html', result=result)
 
 @app.route('/works/area/circle', methods=['GET', 'POST'])
 def acircle():
