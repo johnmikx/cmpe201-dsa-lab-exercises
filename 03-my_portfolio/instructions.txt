@@ -1,0 +1,13 @@
+Laboratory Exercise 3.
+Deadline : October 8, 2025
+Upload your github link below (make sure to give me a collaborative access to your github repository or make your repo public). My githubaccount is "gavenagithub" 
+
+https://docs.google.com/forms/d/e/1FAIpQLSdUquLsAVPj78J4FBov6jdH6uWFqOf_wpfADLigJz5G2r2c-Q/viewform?usp=header
+
+Goal of the lab exercise is to transform the sample Flask code given to you own personal portfolio web application
+Follow the instructions below using  the sample Flask code
+
+1. Update all the pages to include the Nav bar to all pages
+2. Update the profile.html and path "contact" using your own personal data.
+3. Design the pages to your own likeness, you can use CSS, images, javascript to make your profile page more UI friendly
+4. Add an implementation to Area of circle and Area of Triangle as part of the programming works.
