@@ -1,12 +1,42 @@
 {% extends "base.html" %}
 {% block title %}Home{% endblock %}
 {% block content %}
-    <h1>Welcome to my Portfolio</h1>
-    <p>Explore my profile and programming works!</p>
+<h1>Welcome to my Portfolio</h1>
 
-    <ul>
-        <li><a href="/works">toUpperCase</a></li>
-        <li><a href="/works/area/circle">Area of a Circle</a></li>
-        <li><a href="/works/area/triangle">Area of a Triangle</a></li>
-    </ul>
+<div class="center-text">
+    <h2>Explore my Profile and Programming Works!</h2>
+</div>
+
+<div class="icon-boxes">
+    <a href="/profile" class="icon-box">
+        <!-- User/Profile Icon -->
+        <svg viewBox="0 0 64 64"><circle cx="32" cy="24" r="14"/><ellipse cx="32" cy="50" rx="20" ry="10"/></svg>
+        <div>Profile</div>
+    </a>
+    <a href="/works" class="icon-box">
+        <!-- Briefcase/Works Icon -->
+        <svg viewBox="0 0 64 64"><rect x="12" y="22" width="40" height="28" rx="6"/><rect x="24" y="12" width="16" height="10" rx="3"/></svg>
+        <div>Works</div>
+    </a>
+    <a href="/contact" class="icon-box">
+        <!-- Envelope/Contact Icon -->
+        <svg viewBox="0 0 64 64"><rect x="8" y="20" width="48" height="28" rx="6"/><polyline points="8,20 32,44 56,20" fill="none" stroke="#f1c40f" stroke-width="2"/></svg>
+        <div>Contact</div>
+    </a>
+    <a href="/works/toUpperCase" class="icon-box">
+        <!-- Uppercase/Letter Icon -->
+        <svg viewBox="0 0 64 64"><text x="16" y="48" font-size="32" fill="#f1c40f" font-family="Arial" font-weight="bold">A</text></svg>
+        <div>To Uppercase</div>
+    </a>
+    <a href="/works/area/circle" class="icon-box">
+        <!-- Circle Icon -->
+        <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28"/></svg>
+        <div>Area of Circle</div>
+    </a>
+    <a href="/works/area/triangle" class="icon-box">
+        <!-- Triangle Icon -->
+        <svg viewBox="0 0 64 64"><polygon points="32,8 56,56 8,56"/></svg>
+        <div>Area of Triangle</div>
+    </a>
+</div>
 {% endblock %}

@@ -1,12 +1,17 @@
 {% extends "base.html" %}
 {% block title %}Profile{% endblock %}
 {% block content %}
+<div class="profile-card">
+    <!-- Optional: Add your profile image to static/profile.jpg -->
+    <img src="{{ url_for('static', filename='John-Mike.jpeg') }}" alt="Profile Photo" style="margin-bottom: 1rem;">
     <h1>John Mike Asuncion</h1>
-    <p><strong>Course:</strong> Bachelor of Science in Computer Engineering</p>
+    <p><strong>Bachelor of Science in Computer Engineering</strong></p>
     <p><strong>Year Level:</strong> 2nd Year</p>
-
     <h2>About Me</h2>
-    <p>Hello! I'm John Mike Asuncion, a sophomore computer engineering student with a
-         keen interest in programming and technology. I love exploring new programming languages
-         and building projects that solve real-world problems.</p>
+    <p style="max-width: 500px; text-align: justify;">
+        Hello! I'm John Mike Asuncion, a sophomore computer engineering student with a
+        keen interest in programming and technology. I love exploring new programming languages
+        and building projects that solve real-world problems.
+    </p>
+</div>
 {% endblock %}
