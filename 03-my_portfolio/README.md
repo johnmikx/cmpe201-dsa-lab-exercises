@@ -8,7 +8,7 @@
 
 ### **Course Information**
 
-- **Course:** `CMPE 201` Data Structures and Algorithm
+- **Course:** `CMPE 201` Data Structures and Algorithms
 - **Author:** :ninja: **John Mike Asuncion** (BSCPE 2-2)
 - **Professor:**  Engr. Godofredo T. Avena
 
@@ -18,8 +18,16 @@
 03-my_portfolio/
 ├── static/
 │   ├── John-Mike.jpeg
+│   ├── area-of-circle.png
+│   ├── area-of-triangle.png
 │   ├── batman-logo.png
-│   └── style.css
+│   ├── contact-page.png
+│   ├── home-page.png
+│   ├── home-page.png
+│   ├── profile-page.png
+│   ├── programming-works-page.png
+│   ├── style.css
+│   └── uppercase-converter.png
 │
 ├── templates/
 │   ├── base.html
