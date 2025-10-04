@@ -6,6 +6,12 @@
 
 <img width="100%" height="50" src="https://i.imgur.com/dBaSKWF.gif"/>
 
+### **Course Information**
+
+- **Course:** `CMPE 201` Data Structures and Algorithm
+- **Author:** :ninja: **John Mike Asuncion** (BSCPE 2-2)
+- **Professor:**  Engr. Godofredo T. Avena
+
 ## **Portfolio Directory Structure**
 
 ```
