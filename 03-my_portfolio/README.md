@@ -35,3 +35,20 @@
 ├── app.py
 └── instructions.txt
 ```
+
+### **Navigation Bar**
+![Navigation Bar](./static/navigation-bar.png)
+
+### **Home Page**
+![Home Page](./static/home-page.png)
+
+### **Profile Page**
+![Profile Page](./static/profile-page.png)
+
+### **Programming Works Page**
+![Programming Works Page](./static/programming-works-page.png)
+
+### **Contact Page**
+![Contact Page](./static/contact-page.png)
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&section=footer"/>
