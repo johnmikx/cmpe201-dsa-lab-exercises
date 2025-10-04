@@ -47,6 +47,9 @@
 
 ### **Programming Works Page**
 ![Programming Works Page](./static/programming-works-page.png)
+![UpperCase Converter](./static/uppercase-converter.png)
+![Area of Circle](./static/area-of-circle.png)
+![Area of Triangle](./static/area-of-triangle.png)
 
 ### **Contact Page**
 ![Contact Page](./static/contact-page.png)
