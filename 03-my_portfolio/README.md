@@ -23,7 +23,7 @@
 │   ├── batman-logo.png
 │   ├── contact-page.png
 │   ├── home-page.png
-│   ├── home-page.png
+│   ├── infix-to-postfix-converter.png
 │   ├── profile-page.png
 │   ├── programming-works-page.png
 │   ├── style.css
