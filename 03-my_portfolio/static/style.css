@@ -213,6 +213,66 @@ button:hover, input[type="submit"]:hover {
     color: #111;
 }
 
+.infix-postfix-form {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #222;
+    border-radius: 12px;
+    border: 2px solid #f1c40f;
+    box-shadow: 0 2px 8px rgba(241,196,15,0.08);
+}
+
+.infix-postfix-input {
+    margin-bottom: 1.5rem;
+}
+
+.infix-postfix-input label {
+    display: block;
+    margin-bottom: 0.8rem;
+    color: #f1c40f;
+    font-weight: 600;
+}
+
+.infix-postfix-input input {
+    width: 100%;
+    padding: 0.8rem;
+    background: #181818;
+    border: 2px solid #f1c40f;
+    border-radius: 8px;
+    color: #f5f5f5;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.infix-postfix-input input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(241,196,15,0.3);
+}
+
+.infix-postfix-result {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #181818;
+    border-radius: 8px;
+    border-left: 4px solid #f1c40f;
+}
+
+.infix-postfix-result h3 {
+    color: #f1c40f;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.infix-postfix-result p {
+    color: #f5f5f5;
+    font-family: monospace;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    background: #222;
+    border-radius: 4px;
+}
+
 @media (max-width: 900px) {
     .content {
         padding: 1rem;
@@ -236,6 +296,16 @@ button:hover, input[type="submit"]:hover {
         min-width: 0;
         max-width: 350px;
     }
+
+    .infix-postfix-form {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    .infix-postfix-input input {
+        font-size: 0.9rem;
+    }
+
     .contact-card {
         padding: 1rem;
     }

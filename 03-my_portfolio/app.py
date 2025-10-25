@@ -49,5 +49,49 @@ def atriangle():
 def contact():
     return render_template('contact.html')
 
+def has_higher_precedence(op1, op2):
+    precedence = {'+': 1, '-': 1, '*': 2, '/': 2, '^': 3}
+    return precedence.get(op1, 0) >= precedence.get(op2, 0)
+
+def infix_to_postfix(expression):
+    stack = []
+    output = []
+    operators = {'+', '-', '*', '/', '^', '(', ')'}
+    
+    for char in expression.replace(' ', ''):
+        if char not in operators:
+            output.append(char)
+        elif char == '(':
+            stack.append(char)
+        elif char == ')':
+            while stack and stack[-1] != '(':
+                output.append(stack.pop())
+            if stack and stack[-1] == '(':
+                stack.pop()
+        else:
+            while (stack and stack[-1] != '(' and 
+                   has_higher_precedence(stack[-1], char)):
+                output.append(stack.pop())
+            stack.append(char)
+    
+    while stack:
+        if stack[-1] != '(':
+            output.append(stack.pop())
+        else:
+            stack.pop()
+    
+    return ' '.join(output)
+
+@app.route('/works/infix-to-postfix', methods=['GET', 'POST'])
+def convert_expression():
+    result = None
+    if request.method == 'POST':
+        infix_expr = request.form.get('expression', '')
+        try:
+            result = infix_to_postfix(infix_expr)
+        except Exception as e:
+            result = f"Error: {str(e)}"
+    return render_template('infixtopostfix.html', result=result)
+
 if __name__ == "__main__":
     app.run(debug=True)

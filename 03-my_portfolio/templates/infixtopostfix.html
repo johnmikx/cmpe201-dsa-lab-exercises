@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Infix to Postfix{% endblock %}
+{% block content %}
+    <h1>Infix to Postfix Converter</h1>
+    <div class="infix-postfix-form">
+        <form method="POST" action="/works/infix-to-postfix">
+            <div class="infix-postfix-input">
+                <label for="expression">Enter Infix Expression:</label>
+                <input type="text" id="expression" name="expression" placeholder="Example: (a+b)*c" required>
+            </div>
+            <button type="submit">Convert</button>
+        </form>
+
+        {% if result %}
+        <div class="infix-postfix-result">
+            <h3>Postfix Expression:</h3>
+            <p>{{ result }}</p>
+        </div>
+        {% endif %}
+    </div>
+{% endblock %}
