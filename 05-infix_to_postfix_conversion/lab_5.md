@@ -68,3 +68,28 @@ Let's convert the infix expression A * (B + C) / D to postfix:
 
 ### **Final Postfix Expression**:
 A B C + * D /
+
+---
+# **Laboratory 5 Activity: Infix to Postfix Converter**
+
+## **Goal**:
+By the end of this activity, your portfolio web app should allow a user to input an infix expression and instantly see its postfix equivalent displayed on the page.
+
+---
+
+## **Instructions**:
+
+### **1. Python Program (Stack Algorithm Implementation)**
+- Create a **Python program** that converts an **infix expression** (ex: `A + B * C`) into a **postfix expression** (ex: `A B C * +`) using the **Shunting Yard Algorithm** (as discussed in class).
+- The program should accept an infix expression as input and display the equivalent postfix expression as output.
+
+---
+
+### 2. **Web Application Integration**
+- Open your **portfolio web application** and go to your “**Works**” page.
+- Create a **new page** dedicated to the infix-to-postfix converter.
+- This page must include:
+  1. A **text box** for users to input an infix expression (string).  
+  2. A **button** labeled **“Convert to Postfix”**.  
+  3. When the button is clicked, the page should call the **Python function** you created in Step 1 to perform the conversion.  
+  4. Display the **converted postfix expression** below the button.
