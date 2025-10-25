@@ -34,6 +34,7 @@
 │   ├── circle.html
 │   ├── contact.html
 │   ├── index.html
+│   ├── infixtopostfix.html
 │   ├── profile.html
 │   ├── touppercase.html
 │   ├── triangle.html
